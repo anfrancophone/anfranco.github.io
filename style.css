@@ -97,3 +97,21 @@ body {
 .prev:hover, .next:hover {
   background-color: #555;
 }
+/* Ensure slider images fit the grid item */
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-slider .slider-image {
+  width: 100%;       /* full width of the article */
+  height: auto;      /* keep aspect ratio */
+  display: none;     /* hide by default */
+  object-fit: cover; /* make sure it fills the container nicely */
+  border-radius: 4px; /* optional: rounded corners like original */
+}
+
+.image-slider .slider-image.active {
+  display: block;
+}
