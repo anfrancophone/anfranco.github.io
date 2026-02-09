@@ -27,13 +27,17 @@
      <article class="item">
         <img src="Images/emporioarmani_blackjacket_01.jpeg" alt="Proyecto 1">
         <p>Proyecto 1</p>
-      </article>
-      <article class="item">
-        <img src="Images/lino_flamenca_dress_02.jpeg" alt="Proyecto 2">
-        <img src=" Images/lino_flamenca_dress_01.jpeg" alt="Proyecto 2">
-       
-        <p>Proyecto 2</p>
-      </article>
+     <article class="item">
+  <div class="image-slider">
+    <img src="Images/lino_flamenca_dress_02.jpeg" alt="Proyecto 2" class="slider-image active">
+    <img src="Images/lino_flamenca_dress_01.jpeg" alt="Proyecto 2" class="slider-image">
+  </div>
+  <div class="slider-controls">
+    <button class="prev" onclick="changeImage(this, -1)">❮</button>
+    <button class="next" onclick="changeImage(this, 1)">❯</button>
+  </div>
+  <p>Proyecto 2</p>
+</article>
 
       <article class="item">
         <img src="images/proyecto3.jpg" alt="Proyecto 3">
